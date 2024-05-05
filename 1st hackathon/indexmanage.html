@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header>
+    <h1>Admin Panel</h1>
+    <a href="index.cus.html"><button onclick="goToTodoPage()">Go to Todo Page</button></a>
+  </header>
+  <div id="todoApp">
+    <select id="restaurantSelect">
+      <option value="1">Restaurant 1</option>
+      <option value="2">Restaurant 2</option>
+    </select>
+    <input type="text" id="itemName" placeholder="Item Name">
+    <label for="itemImage"><i class="fas fa-image"></i> Add Picture</label>
+    <input type="file" id="itemImage" accept="image/*">
+    <input type="number" id="itemPrice" placeholder="Item Price">
+    <input type="text" id="itemDescription" placeholder="Item Description">
+    <button onclick="addItem()">Add Item</button>
+
+    <div id="itemList" class="item-list"></div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleadmin.css">
+    
+</head>
+<body>
+
+
+        <div class="container">
+            <h2>Login with Admin & Start a Bussenes</h2>
+            <form onsubmit="signup(event)">
+                <input type="name" id="name" placeholder="Name" required="">
+                <input type="Restaurant" id="Restaurant" placeholder="Restaurant" required="">
+                <input type="email" id="email" placeholder="Email" required="">
+                <input type="password" id="password" placeholder="Password" required="">
+               <!-- <a href="indexmanage.html"><button type="submit" id="signupBtn">login</button></a> -->
+               <a href="indexadmin2.html"><button type="button">Login</button></a>
+            </form>
+            <div class="options">
+                <!-- <button id="googleLogin">Continue with Google</button>
+                <span>or</span> -->
+                <a href="indexadmin2.html"><button id="createAccount">Create New Account</button></a>
+               
+            </div>
+        </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"></script>
+    
+        <script src="appadmin.js" ></script>
+    
+    
+    
+
+</body>
+</html>

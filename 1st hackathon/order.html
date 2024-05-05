@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ82BUg7OyB9BaM2hYaaQ2f0S_DA9wNmOhUow5EiK9B55wS8rHY&s');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: scroll;
+  filter: none;
+  -webkit-filter: none;
+
+        }
+        .container {
+            max-width: 350px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .restaurant {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .restaurant h2 {
+            margin-top: 0;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .item span {
+            flex-grow: 1;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+        .cart h2 {
+            margin-top: 0;
+        }
+        .cart-item {
+            margin-bottom: 10px;
+        }
+        button {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            button {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Food Order</h1>
+        
+        <div class="restaurant">
+            <h2>Restaurant 1</h2>
+            <div class="item">
+                <span>Item 1</span>
+                <button onclick="addToCart('Item 1', 'Restaurant 1')">Add to Cart</button>
+            </div>
+            <div class="item">
+                <span>Item 2</span>
+                <button onclick="addToCart('Item 2', 'Restaurant 1')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="restaurant">
+            <h2>Restaurant 2</h2>
+            <div class="item">
+                <span>Item 3</span>
+                <button onclick="addToCart('Item 3', 'Restaurant 2')">Add to Cart</button>
+            </div>
+            <div class="item">
+                <span>Item 4</span>
+                <button onclick="addToCart('Item 4', 'Restaurant 2')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Cart</h2>
+            <div id="cart">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <button onclick="checkout()">Proceed to Checkout</button>
+        </div><br><br>
+        <a href="indexmanage.html"><button>back</button></a>
+    </div>
+
+    <script>
+        let cart = [];
+
+        function addToCart(item, restaurant) {
+            cart.push({ item, restaurant });
+            renderCart();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+
+        function renderCart() {
+            const cartContainer = document.getElementById('cart');
+            cartContainer.innerHTML = '';
+
+            cart.forEach((cartItem, index) => {
+                const cartItemElement = document.createElement('div');
+                cartItemElement.classList.add('cart-item');
+                cartItemElement.textContent = `${cartItem.item} - ${cartItem.restaurant}`;
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.onclick = () => removeFromCart(index);
+                cartItemElement.appendChild(removeButton);
+                cartContainer.appendChild(cartItemElement);
+            });
+        }
+
+        function checkout() {
+            // Implement checkout functionality here
+            alert('Proceeding to checkout!');
+            // You can implement payment gateway UI and functionality here
+        }
+    </script>
+</body>
+</html>
+

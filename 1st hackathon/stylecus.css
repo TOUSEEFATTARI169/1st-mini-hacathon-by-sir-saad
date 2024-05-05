@@ -1,0 +1,158 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #c05353; Light gray background */
+
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+button {
+  width: 15%;
+  padding: 10px;
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.options {
+  margin-top: 20px;
+}
+
+.options span {
+  margin: 0 10px;
+  color: #888; /* Gray color for "or" */
+}
+
+.options button {
+  background-color: #eee; /* Light gray button for "Create New Account" */
+  color: #333;
+}
+
+.options button:hover {
+  background-color: #d8cc21; /* Slightly darker gray on hover */
+}
+
+/* Add the styles for the Google button */
+.google-login {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+}
+
+.google-login button {
+  display: flex;
+
+  
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Adjust the width of the button */
+  padding: 10px 15px; /* Adjust the padding */
+  background-color: #fff; /* White button */
+  border: 1px solid #31cfc2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.google-login button img {
+  width: 60px; /* Adjust the size of the Google logo */
+  margin-right: 30px; /* Add some space between the logo and text */
+  background-color: #0056b3; 
+}
+
+.google-login button span {
+  color: #333; /* Dark text color */
+}
+
+.google-login button:hover {
+  background-color: #d6ce5b; /* Light gray on hover */
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://media.istockphoto.com/id/1134159071/photo/empty-cafeteria.webp?b=1&s=170667a&w=0&k=20&c=8qIMVmv3j7UVLIAwCbNH9aIkBID5N4zf7e60R4ZVgII='); /* Replace 'background.jpg' with your image file */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Fixed background */
+}
+
+
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+#menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+}
+
+#order-container {
+  margin-top: 20px;
+}
+
+.order-item {
+  margin-bottom: 10px;
+}
+
+#checkout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}

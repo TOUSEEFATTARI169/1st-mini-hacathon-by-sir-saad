@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/1134159071/photo/empty-cafeteria.webp?b=1&s=170667a&w=0&k=20&c=8qIMVmv3j7UVLIAwCbNH9aIkBID5N4zf7e60R4ZVgII='); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Fixed background */
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+input[type="Name"],
+input[type="Restaurant"],
+input[type="email"],
+input[type="password"],
+button {
+    width: calc(100% - 22px); /* Adjusting for padding and borders */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.options button {
+    background-color: #eee;
+    color: #333;
+}
+
+.options button:hover {
+    background-color: #ddd;
+}
+
+.options span {
+    margin: 0 10px;
+}
+
+
+
+
